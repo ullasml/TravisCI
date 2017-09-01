@@ -1,10 +1,11 @@
 osx_image: xcode8.3
-  xcode_project: TravisCI.xcodeproj
-  xcode_scheme: TravisCI
- xcode_sdk: iphonesimulator10.3
+xcode_project: TravisCI.xcodeproj
+xcode_scheme: TravisCI
+xcode_sdk: iphonesimulator10.3
 
- language: objective-c
- script:
-   - xcodebuild -project TravisCI.xcodeproj -scheme TravisCI  -sdk iphonesimulator clean test | xcpretty
- after_success:
+language: objective-c
+script:
+   - xcodebuild -project TravisCI.xcodeproj -scheme TravisCI -destination 'platform=iOS Simulator,name=iPhone 6' clean test | xcpretty
+after_success:
    - bash <(curl -s https://codecov.io/bash)
+#44

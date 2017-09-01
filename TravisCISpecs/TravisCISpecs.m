@@ -1,18 +1,18 @@
 //
-//  TravisCITests.m
-//  TravisCITests
+//  TravisCISpecs.m
+//  TravisCISpecs
 //
-//  Created by Ullas ML on 2017-08-30.
+//  Created by Ullas ML on 2017-08-31.
 //  Copyright © 2017 Ullas ML. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface TravisCITests : XCTestCase
+@interface TravisCISpecs : XCTestCase
 
 @end
 
-@implementation TravisCITests
+@implementation TravisCISpecs
 
 - (void)setUp {
     [super setUp];

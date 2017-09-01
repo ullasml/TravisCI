@@ -1,0 +1,12 @@
+[submodule "Externals/Blindside"]
+	path = Externals/Blindside
+	url = https://github.com/jbsf/blindside.git
+[submodule "Externals/Deferred"]
+	path = Externals/Deferred
+	url = https://github.com/kseebaldt/deferred.git
+[submodule "Externals/cedar"]
+	path = Externals/cedar
+	url = https://github.com/pivotal/cedar.git
+[submodule "Externals/PivotalCoreKit"]
+	path = Externals/PivotalCoreKit
+	url = https://github.com/pivotal/PivotalCoreKit.git
