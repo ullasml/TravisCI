@@ -405,7 +405,7 @@
 				1DCB9B6C1F57D32F00C93F6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		1DCB9B6D1F57D32F00C93F6D /* Build configuration list for PBXNativeTarget "TravisCI" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +414,7 @@
 				1DCB9B6F1F57D32F00C93F6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 		1DCB9B701F57D32F00C93F6D /* Build configuration list for PBXNativeTarget "TravisCITests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +423,7 @@
 				1DCB9B721F57D32F00C93F6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
