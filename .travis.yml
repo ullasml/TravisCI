@@ -1,0 +1,10 @@
+osx_image: xcode8.3
+  xcode_project: TravisCI.xcodeproj
+  xcode_scheme: TravisCI
+ xcode_sdk: iphonesimulator10.3
+
+ language: objective-c
+ script:
+   - xcodebuild -project TravisCI.xcodeproj -scheme TravisCI  -sdk iphonesimulator clean test
+ after_success:
+   - bash <(curl -s https://codecov.io/bash)
