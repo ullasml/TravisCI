@@ -3,22 +3,24 @@
 #import "HTTPClient.h"
 #import "KSNetworkClient.h"
 #import "KSPromise.h"
+#import "KSDeferred.h"
 
 @interface HTTPClient ()
+@property (nonatomic) NSURLSession *session;
+@property (nonatomic) NSOperationQueue *queue;
 
-@property(nonatomic) id <KSNetworkClient> networkClient;
-@property(nonatomic) NSOperationQueue *operationQueue;
+
 @end
 
 @implementation HTTPClient
 
 
-- (instancetype)initWithOperationQueue:(NSOperationQueue *)operationQueue networkClient:(id<KSNetworkClient>)networkClient {
+- (instancetype)initWithURLSession:(NSURLSession *)session
+                             queue:(NSOperationQueue *)queue {
     self = [super init];
     if (self) {
-
-        self.operationQueue = operationQueue;
-        self.networkClient = networkClient;
+        self.session = session;
+        self.queue = queue;
     }
     return self;
 }
@@ -32,12 +34,23 @@
 }
 
 - (KSPromise *)sendRequest:(NSURLRequest *)request {
-    KSPromise *networkPromise = [self.networkClient sendAsynchronousRequest:request queue:self.operationQueue];
-
-    return [networkPromise then:^id(KSNetworkResponse *networkResponse) {
-        return networkResponse.data;
-    } error:^id(NSError *error) {
-        return error;
-    }];
+    
+    KSDeferred *deferred = [[KSDeferred alloc] init];
+    NSURLSessionDataTask *dataTask = [self.session dataTaskWithRequest:request
+                                                     completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+                                                         if (error) {
+                                                             [self.queue addOperationWithBlock:^{
+                                                                 [deferred rejectWithError:error];
+                                                             }];
+                                                         }
+                                                         else{ 
+                                                             [self.queue addOperationWithBlock:^{
+                                                                 [deferred resolveWithValue:data];                                                            
+                                                             }];
+                                                             
+                                                         }
+                                                     }];
+    [dataTask resume];
+    return deferred.promise;
 }
 @end

@@ -17,13 +17,21 @@
 
 - (void)configure:(id <BSBinder>)binder
 {
-    [binder bind:@protocol(KSNetworkClient) toClass:[KSNetworkClient class]];
 
     [binder bind:[NSOperationQueue class] toInstance:[NSOperationQueue mainQueue]];
 
     [binder bind:[HTTPClient class] toBlock:^id(NSArray *args, id<BSInjector> injector) {
-        return [[HTTPClient alloc] initWithOperationQueue:[injector getInstance:[NSOperationQueue class]]
-                                            networkClient:[injector getInstance:[KSNetworkClient class]]];
+        NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+        NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration delegate:(id)[[UIApplication sharedApplication] delegate] delegateQueue:nil];
+        return [[HTTPClient alloc] initWithURLSession:session queue:[NSOperationQueue mainQueue]];
+    }];
+    
+    [binder bind:[UserServiceDeserializer class] toBlock:^id(NSArray *args, id<BSInjector> injector) {
+        return [[UserServiceDeserializer alloc] init];
+    }];
+    
+    [binder bind:[RequestProvider class] toBlock:^id(NSArray *args, id<BSInjector> injector) {
+        return [[RequestProvider alloc] init];
     }];
 
     [binder bind:[JSONClient class] toBlock:^id(NSArray *args, id<BSInjector> injector) {
@@ -38,6 +46,10 @@
 
     [binder bind:[ViewController class] toBlock:^id(NSArray *args, id<BSInjector> injector) {
         return [[ViewController alloc] initWithDataRepository:[injector getInstance:[DataRepository class]]];
+    }];
+    
+    [binder bind:[DetailsViewController class] toBlock:^id(NSArray *args, id<BSInjector> injector) {
+        return [[DetailsViewController alloc] initWithNibName:@"DetailsViewController" bundle:nil];
     }];
 
 

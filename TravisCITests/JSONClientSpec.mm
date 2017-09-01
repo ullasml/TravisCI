@@ -65,11 +65,11 @@ describe(@"JSONClient", ^{
         context(@"when the json client fetching data is failed", ^{
             __block NSError *error;
             beforeEach(^{
-
+                error = nice_fake_for([NSError class]);
                 [httpDeferred rejectWithError:error];
             });
             it(@"should reject the promise with correct erroe ", ^{
-                jsonPromise.error should be_same_instance_as(error);
+                jsonPromise.error should equal(error);
                 jsonPromise.rejected should be_truthy;
             });
 

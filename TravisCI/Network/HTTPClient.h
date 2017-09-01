@@ -7,16 +7,15 @@
 
 @interface HTTPClient : NSObject
 
-
-@property(nonatomic, readonly) id <KSNetworkClient> networkClient;
-@property(nonatomic, readonly) NSOperationQueue *operationQueue;
+@property (nonatomic,readonly) NSURLSession *session;
+@property (nonatomic,readonly) NSOperationQueue *queue;
 
 + (instancetype)new UNAVAILABLE_ATTRIBUTE;
 - (instancetype)init UNAVAILABLE_ATTRIBUTE;
 - (instancetype)initWithDataDictionary:(NSDictionary *)dictionary  UNAVAILABLE_ATTRIBUTE;
 
-- (instancetype)initWithOperationQueue:(NSOperationQueue *)operationQueue
-                         networkClient:(id<KSNetworkClient>)networkClient;
+- (instancetype)initWithURLSession:(NSURLSession *)session
+                             queue:(NSOperationQueue *)queue NS_DESIGNATED_INITIALIZER;
 
 -(KSPromise *)sendRequest:(NSURLRequest *)request;
 @end

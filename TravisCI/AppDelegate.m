@@ -7,16 +7,32 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "Blindside.h"
+#import "InjectorProvider.h"
 
 @interface AppDelegate ()
-
+@property (nonatomic) id<BSInjector> injector;
 @end
+
 
 @implementation AppDelegate
 
 
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        self.injector = [InjectorProvider injector];
+    }
+    return self;
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
+    ViewController *viewController = [self.injector getInstance:[ViewController class]];
+    UINavigationController *navigationController = [[UINavigationController alloc]initWithRootViewController:viewController];
+    self.window.rootViewController = navigationController;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

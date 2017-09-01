@@ -7,3 +7,6 @@
 [submodule "Externals/cedar"]
 	path = Externals/cedar
 	url = https://github.com/pivotal/cedar.git
+[submodule "Externals/PivotalCoreKit"]
+	path = Externals/PivotalCoreKit
+	url = https://github.com/pivotal/PivotalCoreKit.git

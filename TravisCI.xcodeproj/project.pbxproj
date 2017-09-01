@@ -12,13 +12,41 @@
 		1D69F10B1F591D2E003765A3 /* libCedar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D69F0C71F591C20003765A3 /* libCedar.a */; };
 		1D69F1101F591D53003765A3 /* libBlindside-StaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D69F09D1F591C14003765A3 /* libBlindside-StaticLib.a */; };
 		1D69F1111F591D57003765A3 /* libDeferred.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D69F0F11F591C30003765A3 /* libDeferred.a */; };
+		1D69F16B1F591E65003765A3 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D69F14A1F591E65003765A3 /* User.m */; };
+		1D69F16C1F591E65003765A3 /* Dependancy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D69F14D1F591E65003765A3 /* Dependancy.m */; };
+		1D69F16D1F591E65003765A3 /* UserServiceDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D69F1501F591E65003765A3 /* UserServiceDeserializer.m */; };
+		1D69F16E1F591E65003765A3 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D69F1521F591E65003765A3 /* users.json */; };
+		1D69F16F1F591E65003765A3 /* HTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D69F1551F591E65003765A3 /* HTTPClient.m */; };
+		1D69F1711F591E65003765A3 /* JSONClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D69F1591F591E65003765A3 /* JSONClient.m */; };
+		1D69F1731F591E65003765A3 /* InjectorProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D69F15E1F591E65003765A3 /* InjectorProvider.m */; };
+		1D69F1741F591E65003765A3 /* RequestProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D69F1601F591E65003765A3 /* RequestProvider.m */; };
+		1D69F1751F591E65003765A3 /* DataRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D69F1631F591E65003765A3 /* DataRepository.m */; };
+		1D69F1761F591E65003765A3 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D69F1661F591E65003765A3 /* DetailsViewController.m */; };
+		1D69F1771F591E65003765A3 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D69F1671F591E65003765A3 /* DetailsViewController.xib */; };
+		1D69F1781F591E65003765A3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D69F1691F591E65003765A3 /* ViewController.m */; };
+		1D69F1791F591E65003765A3 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D69F16A1F591E65003765A3 /* ViewController.xib */; };
+		1D69F1AC1F591EF3003765A3 /* DataRepositorySpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D69F1A11F591EF3003765A3 /* DataRepositorySpec.mm */; };
+		1D69F1AD1F591EF3003765A3 /* DetailsViewControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D69F1A21F591EF3003765A3 /* DetailsViewControllerSpec.mm */; };
+		1D69F1AF1F591EF3003765A3 /* HTTPClientSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D69F1A41F591EF3003765A3 /* HTTPClientSpec.mm */; };
+		1D69F1B01F591EF3003765A3 /* InjectorSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D69F1A51F591EF3003765A3 /* InjectorSpec.mm */; };
+		1D69F1B21F591EF3003765A3 /* JSONClientSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D69F1A71F591EF3003765A3 /* JSONClientSpec.mm */; };
+		1D69F1B31F591EF3003765A3 /* RequestProviderSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D69F1A81F591EF3003765A3 /* RequestProviderSpec.mm */; };
+		1D69F1B41F591EF3003765A3 /* UserServiceDeserializerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D69F1A91F591EF3003765A3 /* UserServiceDeserializerSpec.mm */; };
+		1D69F1B51F591EF3003765A3 /* ViewControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D69F1AA1F591EF3003765A3 /* ViewControllerSpec.mm */; };
+		1D69F21D1F592030003765A3 /* libFoundation+PivotalCore-StaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D69F2021F591FF0003765A3 /* libFoundation+PivotalCore-StaticLib.a */; };
+		1D69F21E1F592030003765A3 /* libFoundation+PivotalSpecHelper-StaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D69F20C1F591FF0003765A3 /* libFoundation+PivotalSpecHelper-StaticLib.a */; };
+		1D69F21F1F592030003765A3 /* libUIKit+PivotalCore-StaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D69F1CC1F591FD8003765A3 /* libUIKit+PivotalCore-StaticLib.a */; };
+		1D69F2201F592030003765A3 /* libUIKit+PivotalSpecHelper-StaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D69F1CE1F591FD8003765A3 /* libUIKit+PivotalSpecHelper-StaticLib.a */; };
+		1D69F2211F592030003765A3 /* libUIKit+PivotalSpecHelperStubs-StaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D69F1D01F591FD8003765A3 /* libUIKit+PivotalSpecHelperStubs-StaticLib.a */; };
+		1D69F2481F592AD7003765A3 /* AppDelegateSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D69F2471F592AD7003765A3 /* AppDelegateSpec.mm */; };
+		1D69F24B1F592B5A003765A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D69F24A1F592B5A003765A3 /* UIKit.framework */; };
+		1D69F2AB1F592F2A003765A3 /* New.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D69F2AA1F592F2A003765A3 /* New.m */; };
+		1D69F2AD1F59302A003765A3 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D69F2AC1F59302A003765A3 /* libxml2.tbd */; };
 		1DCB9B501F57D32F00C93F6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCB9B4F1F57D32F00C93F6D /* main.m */; };
 		1DCB9B531F57D32F00C93F6D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCB9B521F57D32F00C93F6D /* AppDelegate.m */; };
-		1DCB9B561F57D32F00C93F6D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCB9B551F57D32F00C93F6D /* ViewController.m */; };
 		1DCB9B591F57D32F00C93F6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DCB9B571F57D32F00C93F6D /* Main.storyboard */; };
 		1DCB9B5B1F57D32F00C93F6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DCB9B5A1F57D32F00C93F6D /* Assets.xcassets */; };
 		1DCB9B5E1F57D32F00C93F6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DCB9B5C1F57D32F00C93F6D /* LaunchScreen.storyboard */; };
-		1DCB9B691F57D32F00C93F6D /* TravisCITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCB9B681F57D32F00C93F6D /* TravisCITests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -316,6 +344,230 @@
 			remoteGlobalIDString = E18A7B1415674D9B0083D745;
 			remoteInfo = Deferred;
 		};
+		1D69F1CB1F591FD8003765A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D69F1B61F591FD7003765A3 /* UIKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AEBCCC24168B999F0056EE83;
+			remoteInfo = "UIKit+PivotalCore-StaticLib";
+		};
+		1D69F1CD1F591FD8003765A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D69F1B61F591FD7003765A3 /* UIKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AEBCCC64168B9AF10056EE83;
+			remoteInfo = "UIKit+PivotalSpecHelper-StaticLib";
+		};
+		1D69F1CF1F591FD8003765A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D69F1B61F591FD7003765A3 /* UIKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AEC40C89174C203700474D2D;
+			remoteInfo = "UIKit+PivotalSpecHelperStubs-StaticLib";
+		};
+		1D69F1D11F591FD8003765A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D69F1B61F591FD7003765A3 /* UIKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AE3F05A11BE81FDD002BA0DE;
+			remoteInfo = "UIKit+PivotalCore-iOS";
+		};
+		1D69F1D31F591FD8003765A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D69F1B61F591FD7003765A3 /* UIKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 34A6645D1BDFE6AD00EF0FEA;
+			remoteInfo = "UIKit+PivotalCore-tvOS";
+		};
+		1D69F1D51F591FD8003765A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D69F1B61F591FD7003765A3 /* UIKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AE0D6A711BE941290095ACF3;
+			remoteInfo = "UIKit+PivotalSpecHelper-iOS";
+		};
+		1D69F1D71F591FD8003765A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D69F1B61F591FD7003765A3 /* UIKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 34A6646A1BDFE6D400EF0FEA;
+			remoteInfo = "UIKit+PivotalSpecHelper-tvOS";
+		};
+		1D69F1D91F591FD8003765A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D69F1B61F591FD7003765A3 /* UIKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AE0D6A991BE942490095ACF3;
+			remoteInfo = "UIKit+PivotalSpecHelperStubs-iOS";
+		};
+		1D69F1DB1F591FD8003765A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D69F1B61F591FD7003765A3 /* UIKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 34A664771BDFE6E500EF0FEA;
+			remoteInfo = "UIKit+PivotalSpecHelperStubs-tvOS";
+		};
+		1D69F1DD1F591FD8003765A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D69F1B61F591FD7003765A3 /* UIKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AEBCCC34168B99ED0056EE83;
+			remoteInfo = "UIKit-StaticLibSpec";
+		};
+		1D69F1DF1F591FD8003765A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D69F1B61F591FD7003765A3 /* UIKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3466C0941B97A3C500CBAB59;
+			remoteInfo = "UIKit-StaticLibSpecBundle";
+		};
+		1D69F1E11F591FD8003765A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D69F1B61F591FD7003765A3 /* UIKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 346B40E11BE06F4E002A390E;
+			remoteInfo = "UIKit-tvOS SpecHost";
+		};
+		1D69F1E31F591FD8003765A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D69F1B61F591FD7003765A3 /* UIKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 34A664CD1BE027B500EF0FEA;
+			remoteInfo = "UIKit-tvOS SpecBundle";
+		};
+		1D69F1E51F591FD8003765A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D69F1B61F591FD7003765A3 /* UIKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AE0D6A451BE93CAD0095ACF3;
+			remoteInfo = "UIKit-iOS SpecHost";
+		};
+		1D69F1E71F591FD8003765A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D69F1B61F591FD7003765A3 /* UIKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AE3F05AA1BE81FDD002BA0DE;
+			remoteInfo = "UIKit-iOS SpecBundle";
+		};
+		1D69F1FF1F591FF0003765A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D69F1E91F591FF0003765A3 /* Foundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AEA96B49168B506500861DF1;
+			remoteInfo = "Foundation+PivotalCore";
+		};
+		1D69F2011F591FF0003765A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D69F1E91F591FF0003765A3 /* Foundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AEA96C54168B636E00861DF1;
+			remoteInfo = "Foundation+PivotalCore-StaticLib";
+		};
+		1D69F2031F591FF0003765A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D69F1E91F591FF0003765A3 /* Foundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 34A662B81BDF14BB00EF0FEA;
+			remoteInfo = "Foundation+PivotalCore-watchOS";
+		};
+		1D69F2051F591FF0003765A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D69F1E91F591FF0003765A3 /* Foundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AE3F04FD1BE81547002BA0DE;
+			remoteInfo = "Foundation+PivotalCore-iOS";
+		};
+		1D69F2071F591FF0003765A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D69F1E91F591FF0003765A3 /* Foundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 34A663031BDF1A9900EF0FEA;
+			remoteInfo = "Foundation+PivotalCore-tvOS";
+		};
+		1D69F2091F591FF0003765A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D69F1E91F591FF0003765A3 /* Foundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AEA96B9E168B541900861DF1;
+			remoteInfo = "Foundation+PivotalSpecHelper";
+		};
+		1D69F20B1F591FF0003765A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D69F1E91F591FF0003765A3 /* Foundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AEA96C64168B63BD00861DF1;
+			remoteInfo = "Foundation+PivotalSpecHelper-StaticLib";
+		};
+		1D69F20D1F591FF0003765A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D69F1E91F591FF0003765A3 /* Foundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 34A6633C1BDF1D3D00EF0FEA;
+			remoteInfo = "Foundation+PivotalSpecHelper-watchOS";
+		};
+		1D69F20F1F591FF0003765A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D69F1E91F591FF0003765A3 /* Foundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AE3F054D1BE8195E002BA0DE;
+			remoteInfo = "Foundation+PivotalSpecHelper-iOS";
+		};
+		1D69F2111F591FF0003765A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D69F1E91F591FF0003765A3 /* Foundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 34A6636E1BDF200A00EF0FEA;
+			remoteInfo = "Foundation+PivotalSpecHelper-tvOS";
+		};
+		1D69F2131F591FF0003765A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D69F1E91F591FF0003765A3 /* Foundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AEA96BD3168B561500861DF1;
+			remoteInfo = FoundationSpec;
+		};
+		1D69F2151F591FF0003765A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D69F1E91F591FF0003765A3 /* Foundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AEA96C74168B640B00861DF1;
+			remoteInfo = "Foundation-StaticLibSpec";
+		};
+		1D69F2171F591FF0003765A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D69F1E91F591FF0003765A3 /* Foundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3466C03B1B97A10A00CBAB59;
+			remoteInfo = "Foundation-StaticLibSpecBundle";
+		};
+		1D69F2191F591FF0003765A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D69F1E91F591FF0003765A3 /* Foundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 34A663A41BDF24E700EF0FEA;
+			remoteInfo = "Foundation-tvOS SpecBundle";
+		};
+		1D69F21B1F591FF0003765A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D69F1E91F591FF0003765A3 /* Foundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AE3F05061BE81547002BA0DE;
+			remoteInfo = "Foundation+PivotalCore-iOS-DynamicTests";
+		};
+		1D69F2221F5920C8003765A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D69F0851F591C14003765A3 /* Blindside.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 29997B461505EC0B00C12110;
+			remoteInfo = "Blindside-StaticLib";
+		};
+		1D69F2241F5920D1003765A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D69F0E21F591C30003765A3 /* Deferred.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E18A7B1415674D9B0083D745;
+			remoteInfo = Deferred;
+		};
 		1DCB9B651F57D32F00C93F6D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1DCB9B431F57D32F00C93F6D /* Project object */;
@@ -329,18 +581,55 @@
 		1D69F0851F591C14003765A3 /* Blindside.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Blindside.xcodeproj; path = Blindside/Blindside.xcodeproj; sourceTree = "<group>"; };
 		1D69F0A81F591C20003765A3 /* Cedar.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Cedar.xcodeproj; path = cedar/Cedar.xcodeproj; sourceTree = "<group>"; };
 		1D69F0E21F591C30003765A3 /* Deferred.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Deferred.xcodeproj; path = Deferred/Deferred.xcodeproj; sourceTree = "<group>"; };
+		1D69F1491F591E65003765A3 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		1D69F14A1F591E65003765A3 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		1D69F14C1F591E65003765A3 /* Dependancy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dependancy.h; sourceTree = "<group>"; };
+		1D69F14D1F591E65003765A3 /* Dependancy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dependancy.m; sourceTree = "<group>"; };
+		1D69F14F1F591E65003765A3 /* UserServiceDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserServiceDeserializer.h; sourceTree = "<group>"; };
+		1D69F1501F591E65003765A3 /* UserServiceDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserServiceDeserializer.m; sourceTree = "<group>"; };
+		1D69F1521F591E65003765A3 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
+		1D69F1541F591E65003765A3 /* HTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPClient.h; sourceTree = "<group>"; };
+		1D69F1551F591E65003765A3 /* HTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPClient.m; sourceTree = "<group>"; };
+		1D69F1581F591E65003765A3 /* JSONClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONClient.h; sourceTree = "<group>"; };
+		1D69F1591F591E65003765A3 /* JSONClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONClient.m; sourceTree = "<group>"; };
+		1D69F15D1F591E65003765A3 /* InjectorProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InjectorProvider.h; sourceTree = "<group>"; };
+		1D69F15E1F591E65003765A3 /* InjectorProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InjectorProvider.m; sourceTree = "<group>"; };
+		1D69F15F1F591E65003765A3 /* RequestProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestProvider.h; sourceTree = "<group>"; };
+		1D69F1601F591E65003765A3 /* RequestProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestProvider.m; sourceTree = "<group>"; };
+		1D69F1621F591E65003765A3 /* DataRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataRepository.h; sourceTree = "<group>"; };
+		1D69F1631F591E65003765A3 /* DataRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataRepository.m; sourceTree = "<group>"; };
+		1D69F1651F591E65003765A3 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		1D69F1661F591E65003765A3 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		1D69F1671F591E65003765A3 /* DetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		1D69F1681F591E65003765A3 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1D69F1691F591E65003765A3 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1D69F16A1F591E65003765A3 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		1D69F1A11F591EF3003765A3 /* DataRepositorySpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DataRepositorySpec.mm; sourceTree = "<group>"; };
+		1D69F1A21F591EF3003765A3 /* DetailsViewControllerSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DetailsViewControllerSpec.mm; sourceTree = "<group>"; };
+		1D69F1A41F591EF3003765A3 /* HTTPClientSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HTTPClientSpec.mm; sourceTree = "<group>"; };
+		1D69F1A51F591EF3003765A3 /* InjectorSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = InjectorSpec.mm; sourceTree = "<group>"; };
+		1D69F1A71F591EF3003765A3 /* JSONClientSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = JSONClientSpec.mm; sourceTree = "<group>"; };
+		1D69F1A81F591EF3003765A3 /* RequestProviderSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RequestProviderSpec.mm; sourceTree = "<group>"; };
+		1D69F1A91F591EF3003765A3 /* UserServiceDeserializerSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UserServiceDeserializerSpec.mm; sourceTree = "<group>"; };
+		1D69F1AA1F591EF3003765A3 /* ViewControllerSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewControllerSpec.mm; sourceTree = "<group>"; };
+		1D69F1B61F591FD7003765A3 /* UIKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UIKit.xcodeproj; path = PivotalCoreKit/UIKit/UIKit.xcodeproj; sourceTree = "<group>"; };
+		1D69F1E91F591FF0003765A3 /* Foundation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Foundation.xcodeproj; path = PivotalCoreKit/Foundation/Foundation.xcodeproj; sourceTree = "<group>"; };
+		1D69F2471F592AD7003765A3 /* AppDelegateSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegateSpec.mm; sourceTree = "<group>"; };
+		1D69F24A1F592B5A003765A3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1D69F25B1F592BE3003765A3 /* TravisCISpecs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TravisCISpecs.m; sourceTree = "<group>"; };
+		1D69F25D1F592BE3003765A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D69F2631F592C30003765A3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1D69F2AA1F592F2A003765A3 /* New.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = New.m; sourceTree = "<group>"; };
+		1D69F2AC1F59302A003765A3 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		1DCB9B4B1F57D32F00C93F6D /* TravisCI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravisCI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DCB9B4F1F57D32F00C93F6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1DCB9B511F57D32F00C93F6D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1DCB9B521F57D32F00C93F6D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1DCB9B541F57D32F00C93F6D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1DCB9B551F57D32F00C93F6D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1DCB9B581F57D32F00C93F6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1DCB9B5A1F57D32F00C93F6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DCB9B5D1F57D32F00C93F6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1DCB9B5F1F57D32F00C93F6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DCB9B641F57D32F00C93F6D /* TravisCITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravisCITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1DCB9B681F57D32F00C93F6D /* TravisCITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TravisCITests.m; sourceTree = "<group>"; };
 		1DCB9B6A1F57D32F00C93F6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -358,6 +647,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D69F2AD1F59302A003765A3 /* libxml2.tbd in Frameworks */,
+				1D69F24B1F592B5A003765A3 /* UIKit.framework in Frameworks */,
+				1D69F21D1F592030003765A3 /* libFoundation+PivotalCore-StaticLib.a in Frameworks */,
+				1D69F21E1F592030003765A3 /* libFoundation+PivotalSpecHelper-StaticLib.a in Frameworks */,
+				1D69F21F1F592030003765A3 /* libUIKit+PivotalCore-StaticLib.a in Frameworks */,
+				1D69F2201F592030003765A3 /* libUIKit+PivotalSpecHelper-StaticLib.a in Frameworks */,
+				1D69F2211F592030003765A3 /* libUIKit+PivotalSpecHelperStubs-StaticLib.a in Frameworks */,
 				1D69F1111F591D57003765A3 /* libDeferred.a in Frameworks */,
 				1D69F1101F591D53003765A3 /* libBlindside-StaticLib.a in Frameworks */,
 				1D69F10B1F591D2E003765A3 /* libCedar.a in Frameworks */,
@@ -370,6 +666,8 @@
 		1D69F0841F591BF9003765A3 /* Externals */ = {
 			isa = PBXGroup;
 			children = (
+				1D69F1E91F591FF0003765A3 /* Foundation.xcodeproj */,
+				1D69F1B61F591FD7003765A3 /* UIKit.xcodeproj */,
 				1D69F0E21F591C30003765A3 /* Deferred.xcodeproj */,
 				1D69F0A81F591C20003765A3 /* Cedar.xcodeproj */,
 				1D69F0851F591C14003765A3 /* Blindside.xcodeproj */,
@@ -437,13 +735,157 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		1D69F1481F591E65003765A3 /* DataObjects */ = {
+			isa = PBXGroup;
+			children = (
+				1D69F1491F591E65003765A3 /* User.h */,
+				1D69F14A1F591E65003765A3 /* User.m */,
+			);
+			path = DataObjects;
+			sourceTree = "<group>";
+		};
+		1D69F14B1F591E65003765A3 /* Dependancy Injection */ = {
+			isa = PBXGroup;
+			children = (
+				1D69F14C1F591E65003765A3 /* Dependancy.h */,
+				1D69F14D1F591E65003765A3 /* Dependancy.m */,
+			);
+			path = "Dependancy Injection";
+			sourceTree = "<group>";
+		};
+		1D69F14E1F591E65003765A3 /* Deserializer */ = {
+			isa = PBXGroup;
+			children = (
+				1D69F14F1F591E65003765A3 /* UserServiceDeserializer.h */,
+				1D69F1501F591E65003765A3 /* UserServiceDeserializer.m */,
+			);
+			path = Deserializer;
+			sourceTree = "<group>";
+		};
+		1D69F1511F591E65003765A3 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				1D69F1521F591E65003765A3 /* users.json */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		1D69F1531F591E65003765A3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1D69F1541F591E65003765A3 /* HTTPClient.h */,
+				1D69F1551F591E65003765A3 /* HTTPClient.m */,
+				1D69F1581F591E65003765A3 /* JSONClient.h */,
+				1D69F1591F591E65003765A3 /* JSONClient.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		1D69F15C1F591E65003765A3 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				1D69F15D1F591E65003765A3 /* InjectorProvider.h */,
+				1D69F15E1F591E65003765A3 /* InjectorProvider.m */,
+				1D69F15F1F591E65003765A3 /* RequestProvider.h */,
+				1D69F1601F591E65003765A3 /* RequestProvider.m */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		1D69F1611F591E65003765A3 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				1D69F1621F591E65003765A3 /* DataRepository.h */,
+				1D69F1631F591E65003765A3 /* DataRepository.m */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		1D69F1641F591E65003765A3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1D69F1651F591E65003765A3 /* DetailsViewController.h */,
+				1D69F1661F591E65003765A3 /* DetailsViewController.m */,
+				1D69F1671F591E65003765A3 /* DetailsViewController.xib */,
+				1D69F1681F591E65003765A3 /* ViewController.h */,
+				1D69F1691F591E65003765A3 /* ViewController.m */,
+				1D69F16A1F591E65003765A3 /* ViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1D69F1B71F591FD7003765A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D69F1CC1F591FD8003765A3 /* libUIKit+PivotalCore-StaticLib.a */,
+				1D69F1CE1F591FD8003765A3 /* libUIKit+PivotalSpecHelper-StaticLib.a */,
+				1D69F1D01F591FD8003765A3 /* libUIKit+PivotalSpecHelperStubs-StaticLib.a */,
+				1D69F1D21F591FD8003765A3 /* UIKit_PivotalCore.framework */,
+				1D69F1D41F591FD8003765A3 /* UIKit_PivotalCore.framework */,
+				1D69F1D61F591FD8003765A3 /* UIKit_PivotalSpecHelper.framework */,
+				1D69F1D81F591FD8003765A3 /* UIKit_PivotalSpecHelper.framework */,
+				1D69F1DA1F591FD8003765A3 /* UIKit_PivotalSpecHelperStubs.framework */,
+				1D69F1DC1F591FD8003765A3 /* UIKit_PivotalSpecHelperStubs.framework */,
+				1D69F1DE1F591FD8003765A3 /* UIKit-StaticLibSpec.app */,
+				1D69F1E01F591FD8003765A3 /* UIKit-StaticLibSpecBundle.xctest */,
+				1D69F1E21F591FD8003765A3 /* UIKit-tvOS SpecHost.app */,
+				1D69F1E41F591FD8003765A3 /* UIKit-tvOS SpecBundle.xctest */,
+				1D69F1E61F591FD8003765A3 /* UIKit-iOS SpecHost.app */,
+				1D69F1E81F591FD8003765A3 /* UIKit-iOS SpecBundle.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D69F1EA1F591FF0003765A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D69F2001F591FF0003765A3 /* Foundation+PivotalCore.framework */,
+				1D69F2021F591FF0003765A3 /* libFoundation+PivotalCore-StaticLib.a */,
+				1D69F2041F591FF0003765A3 /* Foundation_PivotalCore.framework */,
+				1D69F2061F591FF0003765A3 /* Foundation_PivotalCore.framework */,
+				1D69F2081F591FF0003765A3 /* Foundation_PivotalCore.framework */,
+				1D69F20A1F591FF0003765A3 /* Foundation+PivotalSpecHelper.framework */,
+				1D69F20C1F591FF0003765A3 /* libFoundation+PivotalSpecHelper-StaticLib.a */,
+				1D69F20E1F591FF0003765A3 /* Foundation_PivotalSpecHelper.framework */,
+				1D69F2101F591FF0003765A3 /* Foundation_PivotalSpecHelper.framework */,
+				1D69F2121F591FF0003765A3 /* Foundation_PivotalSpecHelper.framework */,
+				1D69F2141F591FF0003765A3 /* FoundationSpec */,
+				1D69F2161F591FF0003765A3 /* Foundation-StaticLibSpec.app */,
+				1D69F2181F591FF0003765A3 /* Foundation-StaticLibSpecBundle.xctest */,
+				1D69F21A1F591FF0003765A3 /* Foundation-tvOS SpecBundle.xctest */,
+				1D69F21C1F591FF0003765A3 /* Foundation+PivotalCore-iOS-DynamicTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D69F2491F592B5A003765A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D69F2AC1F59302A003765A3 /* libxml2.tbd */,
+				1D69F2631F592C30003765A3 /* XCTest.framework */,
+				1D69F24A1F592B5A003765A3 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1D69F25A1F592BE3003765A3 /* TravisCISpecs */ = {
+			isa = PBXGroup;
+			children = (
+				1D69F25B1F592BE3003765A3 /* TravisCISpecs.m */,
+				1D69F25D1F592BE3003765A3 /* Info.plist */,
+			);
+			path = TravisCISpecs;
+			sourceTree = "<group>";
+		};
 		1DCB9B421F57D32F00C93F6D = {
 			isa = PBXGroup;
 			children = (
 				1D69F0841F591BF9003765A3 /* Externals */,
 				1DCB9B4D1F57D32F00C93F6D /* TravisCI */,
 				1DCB9B671F57D32F00C93F6D /* TravisCITests */,
+				1D69F25A1F592BE3003765A3 /* TravisCISpecs */,
 				1DCB9B4C1F57D32F00C93F6D /* Products */,
+				1D69F2491F592B5A003765A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -459,10 +901,16 @@
 		1DCB9B4D1F57D32F00C93F6D /* TravisCI */ = {
 			isa = PBXGroup;
 			children = (
+				1D69F1481F591E65003765A3 /* DataObjects */,
+				1D69F14B1F591E65003765A3 /* Dependancy Injection */,
+				1D69F14E1F591E65003765A3 /* Deserializer */,
+				1D69F1511F591E65003765A3 /* Fixtures */,
+				1D69F1531F591E65003765A3 /* Network */,
+				1D69F15C1F591E65003765A3 /* Providers */,
+				1D69F1611F591E65003765A3 /* Repository */,
+				1D69F1641F591E65003765A3 /* ViewControllers */,
 				1DCB9B511F57D32F00C93F6D /* AppDelegate.h */,
 				1DCB9B521F57D32F00C93F6D /* AppDelegate.m */,
-				1DCB9B541F57D32F00C93F6D /* ViewController.h */,
-				1DCB9B551F57D32F00C93F6D /* ViewController.m */,
 				1DCB9B571F57D32F00C93F6D /* Main.storyboard */,
 				1DCB9B5A1F57D32F00C93F6D /* Assets.xcassets */,
 				1DCB9B5C1F57D32F00C93F6D /* LaunchScreen.storyboard */,
@@ -483,8 +931,17 @@
 		1DCB9B671F57D32F00C93F6D /* TravisCITests */ = {
 			isa = PBXGroup;
 			children = (
-				1DCB9B681F57D32F00C93F6D /* TravisCITests.m */,
+				1D69F1A11F591EF3003765A3 /* DataRepositorySpec.mm */,
+				1D69F1A21F591EF3003765A3 /* DetailsViewControllerSpec.mm */,
+				1D69F1A41F591EF3003765A3 /* HTTPClientSpec.mm */,
+				1D69F1A51F591EF3003765A3 /* InjectorSpec.mm */,
+				1D69F1A71F591EF3003765A3 /* JSONClientSpec.mm */,
+				1D69F1A81F591EF3003765A3 /* RequestProviderSpec.mm */,
+				1D69F1A91F591EF3003765A3 /* UserServiceDeserializerSpec.mm */,
+				1D69F1AA1F591EF3003765A3 /* ViewControllerSpec.mm */,
 				1DCB9B6A1F57D32F00C93F6D /* Info.plist */,
+				1D69F2471F592AD7003765A3 /* AppDelegateSpec.mm */,
+				1D69F2AA1F592F2A003765A3 /* New.m */,
 			);
 			path = TravisCITests;
 			sourceTree = "<group>";
@@ -503,6 +960,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				1D69F2251F5920D1003765A3 /* PBXTargetDependency */,
+				1D69F2231F5920C8003765A3 /* PBXTargetDependency */,
 			);
 			name = TravisCI;
 			productName = TravisCI;
@@ -573,6 +1032,14 @@
 				{
 					ProductGroup = 1D69F0E31F591C30003765A3 /* Products */;
 					ProjectRef = 1D69F0E21F591C30003765A3 /* Deferred.xcodeproj */;
+				},
+				{
+					ProductGroup = 1D69F1EA1F591FF0003765A3 /* Products */;
+					ProjectRef = 1D69F1E91F591FF0003765A3 /* Foundation.xcodeproj */;
+				},
+				{
+					ProductGroup = 1D69F1B71F591FD7003765A3 /* Products */;
+					ProjectRef = 1D69F1B61F591FD7003765A3 /* UIKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -857,6 +1324,216 @@
 			remoteRef = 1D69F1041F591C30003765A3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		1D69F1CC1F591FD8003765A3 /* libUIKit+PivotalCore-StaticLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libUIKit+PivotalCore-StaticLib.a";
+			remoteRef = 1D69F1CB1F591FD8003765A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1D69F1CE1F591FD8003765A3 /* libUIKit+PivotalSpecHelper-StaticLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libUIKit+PivotalSpecHelper-StaticLib.a";
+			remoteRef = 1D69F1CD1F591FD8003765A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1D69F1D01F591FD8003765A3 /* libUIKit+PivotalSpecHelperStubs-StaticLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libUIKit+PivotalSpecHelperStubs-StaticLib.a";
+			remoteRef = 1D69F1CF1F591FD8003765A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1D69F1D21F591FD8003765A3 /* UIKit_PivotalCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = UIKit_PivotalCore.framework;
+			remoteRef = 1D69F1D11F591FD8003765A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1D69F1D41F591FD8003765A3 /* UIKit_PivotalCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = UIKit_PivotalCore.framework;
+			remoteRef = 1D69F1D31F591FD8003765A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1D69F1D61F591FD8003765A3 /* UIKit_PivotalSpecHelper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = UIKit_PivotalSpecHelper.framework;
+			remoteRef = 1D69F1D51F591FD8003765A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1D69F1D81F591FD8003765A3 /* UIKit_PivotalSpecHelper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = UIKit_PivotalSpecHelper.framework;
+			remoteRef = 1D69F1D71F591FD8003765A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1D69F1DA1F591FD8003765A3 /* UIKit_PivotalSpecHelperStubs.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = UIKit_PivotalSpecHelperStubs.framework;
+			remoteRef = 1D69F1D91F591FD8003765A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1D69F1DC1F591FD8003765A3 /* UIKit_PivotalSpecHelperStubs.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = UIKit_PivotalSpecHelperStubs.framework;
+			remoteRef = 1D69F1DB1F591FD8003765A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1D69F1DE1F591FD8003765A3 /* UIKit-StaticLibSpec.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "UIKit-StaticLibSpec.app";
+			remoteRef = 1D69F1DD1F591FD8003765A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1D69F1E01F591FD8003765A3 /* UIKit-StaticLibSpecBundle.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "UIKit-StaticLibSpecBundle.xctest";
+			remoteRef = 1D69F1DF1F591FD8003765A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1D69F1E21F591FD8003765A3 /* UIKit-tvOS SpecHost.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "UIKit-tvOS SpecHost.app";
+			remoteRef = 1D69F1E11F591FD8003765A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1D69F1E41F591FD8003765A3 /* UIKit-tvOS SpecBundle.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "UIKit-tvOS SpecBundle.xctest";
+			remoteRef = 1D69F1E31F591FD8003765A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1D69F1E61F591FD8003765A3 /* UIKit-iOS SpecHost.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "UIKit-iOS SpecHost.app";
+			remoteRef = 1D69F1E51F591FD8003765A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1D69F1E81F591FD8003765A3 /* UIKit-iOS SpecBundle.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "UIKit-iOS SpecBundle.xctest";
+			remoteRef = 1D69F1E71F591FD8003765A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1D69F2001F591FF0003765A3 /* Foundation+PivotalCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = "Foundation+PivotalCore.framework";
+			remoteRef = 1D69F1FF1F591FF0003765A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1D69F2021F591FF0003765A3 /* libFoundation+PivotalCore-StaticLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libFoundation+PivotalCore-StaticLib.a";
+			remoteRef = 1D69F2011F591FF0003765A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1D69F2041F591FF0003765A3 /* Foundation_PivotalCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Foundation_PivotalCore.framework;
+			remoteRef = 1D69F2031F591FF0003765A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1D69F2061F591FF0003765A3 /* Foundation_PivotalCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Foundation_PivotalCore.framework;
+			remoteRef = 1D69F2051F591FF0003765A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1D69F2081F591FF0003765A3 /* Foundation_PivotalCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Foundation_PivotalCore.framework;
+			remoteRef = 1D69F2071F591FF0003765A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1D69F20A1F591FF0003765A3 /* Foundation+PivotalSpecHelper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = "Foundation+PivotalSpecHelper.framework";
+			remoteRef = 1D69F2091F591FF0003765A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1D69F20C1F591FF0003765A3 /* libFoundation+PivotalSpecHelper-StaticLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libFoundation+PivotalSpecHelper-StaticLib.a";
+			remoteRef = 1D69F20B1F591FF0003765A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1D69F20E1F591FF0003765A3 /* Foundation_PivotalSpecHelper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Foundation_PivotalSpecHelper.framework;
+			remoteRef = 1D69F20D1F591FF0003765A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1D69F2101F591FF0003765A3 /* Foundation_PivotalSpecHelper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Foundation_PivotalSpecHelper.framework;
+			remoteRef = 1D69F20F1F591FF0003765A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1D69F2121F591FF0003765A3 /* Foundation_PivotalSpecHelper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Foundation_PivotalSpecHelper.framework;
+			remoteRef = 1D69F2111F591FF0003765A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1D69F2141F591FF0003765A3 /* FoundationSpec */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = FoundationSpec;
+			remoteRef = 1D69F2131F591FF0003765A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1D69F2161F591FF0003765A3 /* Foundation-StaticLibSpec.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Foundation-StaticLibSpec.app";
+			remoteRef = 1D69F2151F591FF0003765A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1D69F2181F591FF0003765A3 /* Foundation-StaticLibSpecBundle.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Foundation-StaticLibSpecBundle.xctest";
+			remoteRef = 1D69F2171F591FF0003765A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1D69F21A1F591FF0003765A3 /* Foundation-tvOS SpecBundle.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Foundation-tvOS SpecBundle.xctest";
+			remoteRef = 1D69F2191F591FF0003765A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1D69F21C1F591FF0003765A3 /* Foundation+PivotalCore-iOS-DynamicTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Foundation+PivotalCore-iOS-DynamicTests.xctest";
+			remoteRef = 1D69F21B1F591FF0003765A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -864,8 +1541,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D69F16E1F591E65003765A3 /* users.json in Resources */,
 				1DCB9B5E1F57D32F00C93F6D /* LaunchScreen.storyboard in Resources */,
+				1D69F1771F591E65003765A3 /* DetailsViewController.xib in Resources */,
 				1DCB9B5B1F57D32F00C93F6D /* Assets.xcassets in Resources */,
+				1D69F1791F591E65003765A3 /* ViewController.xib in Resources */,
 				1DCB9B591F57D32F00C93F6D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -884,9 +1564,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DCB9B561F57D32F00C93F6D /* ViewController.m in Sources */,
+				1D69F1711F591E65003765A3 /* JSONClient.m in Sources */,
+				1D69F16B1F591E65003765A3 /* User.m in Sources */,
+				1D69F1741F591E65003765A3 /* RequestProvider.m in Sources */,
+				1D69F1751F591E65003765A3 /* DataRepository.m in Sources */,
+				1D69F16D1F591E65003765A3 /* UserServiceDeserializer.m in Sources */,
+				1D69F16C1F591E65003765A3 /* Dependancy.m in Sources */,
+				1D69F1781F591E65003765A3 /* ViewController.m in Sources */,
 				1DCB9B531F57D32F00C93F6D /* AppDelegate.m in Sources */,
 				1DCB9B501F57D32F00C93F6D /* main.m in Sources */,
+				1D69F1761F591E65003765A3 /* DetailsViewController.m in Sources */,
+				1D69F16F1F591E65003765A3 /* HTTPClient.m in Sources */,
+				1D69F1731F591E65003765A3 /* InjectorProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -894,7 +1583,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DCB9B691F57D32F00C93F6D /* TravisCITests.m in Sources */,
+				1D69F1AD1F591EF3003765A3 /* DetailsViewControllerSpec.mm in Sources */,
+				1D69F2481F592AD7003765A3 /* AppDelegateSpec.mm in Sources */,
+				1D69F1B21F591EF3003765A3 /* JSONClientSpec.mm in Sources */,
+				1D69F1B41F591EF3003765A3 /* UserServiceDeserializerSpec.mm in Sources */,
+				1D69F2AB1F592F2A003765A3 /* New.m in Sources */,
+				1D69F1B31F591EF3003765A3 /* RequestProviderSpec.mm in Sources */,
+				1D69F1B51F591EF3003765A3 /* ViewControllerSpec.mm in Sources */,
+				1D69F1B01F591EF3003765A3 /* InjectorSpec.mm in Sources */,
+				1D69F1AF1F591EF3003765A3 /* HTTPClientSpec.mm in Sources */,
+				1D69F1AC1F591EF3003765A3 /* DataRepositorySpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -915,6 +1613,16 @@
 			isa = PBXTargetDependency;
 			name = Deferred;
 			targetProxy = 1D69F10E1F591D4C003765A3 /* PBXContainerItemProxy */;
+		};
+		1D69F2231F5920C8003765A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Blindside-StaticLib";
+			targetProxy = 1D69F2221F5920C8003765A3 /* PBXContainerItemProxy */;
+		};
+		1D69F2251F5920D1003765A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Deferred;
+			targetProxy = 1D69F2241F5920D1003765A3 /* PBXContainerItemProxy */;
 		};
 		1DCB9B661F57D32F00C93F6D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1039,11 +1747,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libc++";
 				INFOPLIST_FILE = TravisCI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Replicon.TravisCI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/Externals/deferred/Deferred/\" \"$(PROJECT_DIR)/Externals/blindside/Headers/\" \"$(PROJECT_DIR)/Externals/cedar/Source/Headers/\"";
+				USER_HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/Externals/deferred/Deferred/\"/** \"$(PROJECT_DIR)/Externals/blindside/Headers/\"/** \"$(PROJECT_DIR)/Externals/cedar/Source/Headers/\"/**";
 			};
 			name = Debug;
 		};
@@ -1051,11 +1760,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libc++";
 				INFOPLIST_FILE = TravisCI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Replicon.TravisCI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/Externals/deferred/Deferred/\" \"$(PROJECT_DIR)/Externals/blindside/Headers/\" \"$(PROJECT_DIR)/Externals/cedar/Source/Headers/\"";
+				USER_HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/Externals/deferred/Deferred/\"/** \"$(PROJECT_DIR)/Externals/blindside/Headers/\"/** \"$(PROJECT_DIR)/Externals/cedar/Source/Headers/\"/**";
 			};
 			name = Release;
 		};
@@ -1063,12 +1773,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LIBRARY = "libc++";
 				INFOPLIST_FILE = TravisCITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Replicon.TravisCITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravisCI.app/TravisCI";
-				USER_HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/Externals/deferred/Deferred/\" \"$(PROJECT_DIR)/Externals/cedar/Source/Headers/\" \"$(PROJECT_DIR)/Externals/blindside/Headers/\" \"$(PROJECT_DIR)/Externals/PivotalCoreKit/UIKit/SpecHelper/\"/** \"$(PROJECT_DIR)/Externals/PivotalCoreKit/Foundation/SpecHelper/\"/**";
+				USER_HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/Externals/deferred/Deferred/\"/** \"$(PROJECT_DIR)/Externals/cedar/Source/Headers/\"/** \"$(PROJECT_DIR)/Externals/blindside/Headers/\"/** \"$(PROJECT_DIR)/Externals/PivotalCoreKit/UIKit/SpecHelper/\"/** \"$(PROJECT_DIR)/Externals/PivotalCoreKit/Foundation/SpecHelper/\"/**";
 			};
 			name = Debug;
 		};
@@ -1076,12 +1791,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LIBRARY = "libc++";
 				INFOPLIST_FILE = TravisCITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Replicon.TravisCITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravisCI.app/TravisCI";
-				USER_HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/Externals/deferred/Deferred/\" \"$(PROJECT_DIR)/Externals/cedar/Source/Headers/\" \"$(PROJECT_DIR)/Externals/blindside/Headers/\" \"$(PROJECT_DIR)/Externals/PivotalCoreKit/UIKit/SpecHelper/\"/** \"$(PROJECT_DIR)/Externals/PivotalCoreKit/Foundation/SpecHelper/\"/**";
+				USER_HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/Externals/deferred/Deferred/\"/** \"$(PROJECT_DIR)/Externals/cedar/Source/Headers/\"/** \"$(PROJECT_DIR)/Externals/blindside/Headers/\"/** \"$(PROJECT_DIR)/Externals/PivotalCoreKit/UIKit/SpecHelper/\"/** \"$(PROJECT_DIR)/Externals/PivotalCoreKit/Foundation/SpecHelper/\"/**";
 			};
 			name = Release;
 		};

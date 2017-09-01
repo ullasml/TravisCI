@@ -9,7 +9,7 @@ using namespace Cedar::Doubles;
 
 SPEC_BEGIN(HTTPClientSpec)
 
-describe(@"HTTPClient", ^{
+/*describe(@"HTTPClient", ^{
     __block HTTPClient *subject;
     __block NSOperationQueue *operationQueue;
     __block id <KSNetworkClient> networkClient;
@@ -59,6 +59,6 @@ describe(@"HTTPClient", ^{
             httpClientPromise.error should be_same_instance_as(error);
         });
     });
-});
+});*/
 
 SPEC_END

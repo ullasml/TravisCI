@@ -39,8 +39,7 @@ describe(@"Injector", ^{
 
         HTTPClient *httpClient = [subject getInstance:[HTTPClient class]];
         httpClient should be_instance_of([HTTPClient class]);
-        httpClient.networkClient should be_instance_of([KSNetworkClient class]);
-        httpClient.operationQueue should be_instance_of([NSOperationQueue class]);
+        httpClient.session should be_instance_of([NSURLSession class]).or_any_subclass();
     });
 
     it(@"should create a JSONClient", ^{

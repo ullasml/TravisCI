@@ -57,9 +57,9 @@ describe(@"DataRepository", ^{
         });
 
         it(@"should reject the promise when request fails", ^{
-            NSError *error;
+            NSError *error = nice_fake_for([NSError class]);;
             [jsonDeferred rejectWithError:error];
-            promise.error should be_same_instance_as(error);
+            promise.error should equal(error);
         });
     });
 });
