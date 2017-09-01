@@ -8,3 +8,4 @@ osx_image: xcode8.3
    - xcodebuild -project TravisCI.xcodeproj -scheme TravisCI  -sdk iphonesimulator clean test | xcpretty
  after_success:
    - bash <(curl -s https://codecov.io/bash)
+#44
