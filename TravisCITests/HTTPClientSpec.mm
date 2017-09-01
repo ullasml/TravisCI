@@ -9,42 +9,62 @@ using namespace Cedar::Doubles;
 
 SPEC_BEGIN(HTTPClientSpec)
 
-/*describe(@"HTTPClient", ^{
+describe(@"HTTPClient", ^{
     __block HTTPClient *subject;
     __block NSOperationQueue *operationQueue;
-    __block id <KSNetworkClient> networkClient;
-    __block KSDeferred *networkDeferred;
-    __block NSURLRequest *urlRequest;
     __block KSPromise *httpClientPromise;
+    __block NSURLSession *session;
+    __block NSURLSessionDataTask *task;
+    __block NSURLRequest *request;
+    __block NSURLRequest *expectedRequest;
+    
 
+
+    __block void (^simulateNetworkResponse)(NSData *, NSURLResponse *, NSError *);
 
     beforeEach(^{
+        task = nice_fake_for([NSURLSessionDataTask class]);
+        session = nice_fake_for([NSURLSession class]);
+        request = nice_fake_for([NSURLRequest class]);
+        request stub_method(@selector(URL)).and_return([NSURL URLWithString:@"my-special-URL"]);
         operationQueue = nice_fake_for([NSOperationQueue class]);
-        networkClient = nice_fake_for(@protocol(KSNetworkClient));
-        networkDeferred = [[KSDeferred alloc]init];
-        urlRequest = nice_fake_for([NSURLRequest class]);
 
-        networkClient stub_method(@selector(sendAsynchronousRequest:queue:)).and_return(networkDeferred.promise);
-        subject = [[HTTPClient alloc]initWithOperationQueue:operationQueue
-                                              networkClient:networkClient];
-
-        httpClientPromise = [subject sendRequest:urlRequest];
+        session stub_method(@selector(dataTaskWithRequest:completionHandler:))
+        .and_do_block(^NSURLSessionDataTask *(NSURLRequest *receivedRequest, void (^completionHandler)(NSData *, NSURLResponse *, NSError *)){
+            expectedRequest = receivedRequest;
+            simulateNetworkResponse = [completionHandler copy];
+            return task;
+        });
+        subject = [[HTTPClient alloc]initWithURLSession:session queue:operationQueue];
+        httpClientPromise = [subject sendRequest:request];
+    });
+    
+    it(@"should return a promise", ^{
+        httpClientPromise should_not be_nil;
+    });
+    
+    it(@"should send the request to the session", ^{
+        session should have_received(@selector(dataTaskWithRequest:completionHandler:))
+        .with(request, Arguments::anything);
+    });
+    
+    it(@"should resume the data task ", ^{
+        task should have_received(@selector(resume));
     });
 
     context(@"When the network promise is successfull", ^{
 
         __block NSData *data;
+        __block NSURLResponse *response;
         beforeEach(^{
-
-            data = fake_for([NSData class]);
-            KSNetworkResponse *networkResponse = fake_for([KSNetworkResponse class]);
-            networkResponse stub_method(@selector(data)).and_return(data);
-            [networkDeferred resolveWithValue:networkResponse];
-
+            data = nice_fake_for([NSData class]);
+            response = nice_fake_for([NSURLResponse class]);
+            simulateNetworkResponse(data, response, nil);
         });
 
         it(@"should resolve the promise with correct data", ^{
-            httpClientPromise.value should be_same_instance_as(data);
+            httpClientPromise.fulfilled should be_truthy;
+            httpClientPromise.value should equal(data);
         });
     });
 
@@ -52,13 +72,14 @@ SPEC_BEGIN(HTTPClientSpec)
         __block NSError *error;
         beforeEach(^{
             error = nice_fake_for([NSError class]);
-            [networkDeferred rejectWithError:error];
+            simulateNetworkResponse(nil, nil, error);
         });
 
         it(@"should reject the promise with the correct error", ^{
-            httpClientPromise.error should be_same_instance_as(error);
+            httpClientPromise.rejected should be_truthy;
+            httpClientPromise.error should equal(error);
         });
     });
-});*/
+});
 
 SPEC_END

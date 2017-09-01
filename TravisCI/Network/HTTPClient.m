@@ -39,14 +39,14 @@
     NSURLSessionDataTask *dataTask = [self.session dataTaskWithRequest:request
                                                      completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
                                                          if (error) {
-                                                             [self.queue addOperationWithBlock:^{
+                                                             //[self.queue addOperationWithBlock:^{
                                                                  [deferred rejectWithError:error];
-                                                             }];
+                                                             //}];
                                                          }
                                                          else{ 
-                                                             [self.queue addOperationWithBlock:^{
+                                                             //[self.queue addOperationWithBlock:^{
                                                                  [deferred resolveWithValue:data];                                                            
-                                                             }];
+                                                             //}];
                                                              
                                                          }
                                                      }];
