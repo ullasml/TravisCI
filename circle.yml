@@ -7,12 +7,12 @@ checkout:
     - git submodule update --init --recursive
 
 test:
-  post:
-    - bash <(curl -s https://codecov.io/bash)
- override:
+  override:
     - xcodebuild
         -scheme TravisCI
         -destination 'platform=iOS Simulator,name=iPhone 6'
         -sdk iphonesimulator
         -project 'TravisCI.xcodeproj'
         clean build test
+  post:
+    - bash <(curl -s https://codecov.io/bash)
