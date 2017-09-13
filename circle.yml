@@ -1,22 +1,16 @@
 machine:
-  xcode:
-    version: 8.3.3
+ xcode:
+  version: 8.3.3
 
-  checkout:
-    post:
-      - git submodule update --init --recursive
+checkout:
+ post:
+    - git submodule update --init --recursive
 
-    test:
-  override:
-    - set -o pipefail &&
-      xcodebuild
-      CODE_SIGNING_REQUIRED=NO
-      CODE_SIGN_IDENTITY=
-      PROVISIONING_PROFILE=
+test:
+ override:
+    - xcodebuild
         -scheme TravisCI
         -destination 'platform=iOS Simulator,name=iPhone 6'
         -sdk iphonesimulator
         -project 'TravisCI.xcodeproj'
-        clean build test |
-      tee $CIRCLE_ARTIFACTS/xcode_raw.log |
-      xcpretty --color --report junit --output $CIRCLE_TEST_REPORTS/xcode/results.xml
+        clean build test
