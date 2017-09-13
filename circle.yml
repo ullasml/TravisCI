@@ -14,5 +14,3 @@ test:
         -sdk iphonesimulator
         -project 'TravisCI.xcodeproj'
         clean build test
-  post:
-    - bash <(curl -s https://codecov.io/bash)
