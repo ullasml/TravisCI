@@ -2,6 +2,10 @@ machine:
   xcode:
     version: 8.3.3
 
+  checkout:
+    post:
+      - git submodule update --init --recursive
+
     test:
   override:
     - set -o pipefail &&
