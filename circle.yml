@@ -10,10 +10,13 @@ machine:
   override:
     - set -o pipefail &&
       xcodebuild
-        -project TravisCI.xcodeproj
+      CODE_SIGNING_REQUIRED=NO
+      CODE_SIGN_IDENTITY=
+      PROVISIONING_PROFILE=
         -scheme TravisCI
-        -sdk iphonesimulator
         -destination 'platform=iOS Simulator,name=iPhone 6'
+        -sdk iphonesimulator
+        -project 'TravisCI.xcodeproj'
         clean build test |
       tee $CIRCLE_ARTIFACTS/xcode_raw.log |
       xcpretty --color --report junit --output $CIRCLE_TEST_REPORTS/xcode/results.xml
